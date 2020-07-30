@@ -1,0 +1,27 @@
+
+
+    <div class="w-100 m-2 p-2"> 
+        <h1>Listado de Proyectos</h1>
+
+        <table class="table">
+            <tr>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Fecha de Inicio</th>
+                <th>Fecha Final</th>
+                <th>Estado</th>
+            </tr>
+
+        <% @proyects.each do |proyect| %>
+
+            <tr>
+                <td><%= proyect.name %></td>
+                <td><%= proyect.description %></td>
+                <td><%= proyect.initial_date %></td>
+                <td><%= proyect.final_date %></td>
+                <td><%= proyect.status %></td>
+            <tr>
+        <% end %>
+
+        </table>
+        </div>

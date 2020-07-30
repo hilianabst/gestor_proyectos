@@ -1,0 +1,45 @@
+
+<h1> Gestor de Proyectos </h1>
+
+<form method="post" action="/pages/dashboard" class="mt-5 ml-5 w-25  " id="create_proyects">
+
+<div class="form-group">
+<label for="name">Nombre</label>
+<input name="name" class="form-control" placeholder="Nombre del tu proyecto">
+</div>
+
+
+<div class="form-group">
+<label for="c">Descripcion</label>
+<textarea name="description" class="form-control" placeholder="Descripcion del proyecto"></textarea>
+</div>
+
+<div class="form-group">
+<label for="initial_date">Fecha de Inicio</label>
+<input type="date" name="initial_date" class="form-control">
+</div>
+
+<div class="form-group">
+<label for="final_date">Fecha de Termino</label>
+<input type="date" name="final_date" class="form-control" >
+
+
+<div class="form-group">
+<label for="status">Estado</label>
+<select name="status" class="form-control" >
+<option>propuesta</option>
+
+<option>en progreso</option>
+
+<option>terminado</option>
+</select>
+
+
+</div>
+
+
+<input type="submit" value="Enviar">
+
+
+</form>
+
